@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insectCatchGame</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="page one">
+        <h1>Catch The Insect</h1>
+        <div class="btn" onclick="page(2)">Play Game</div>
+
+    </div>
+    <div id="page2" class="page two">
+        <h1>What is your "favorite" insect</h1>
+        <div class="choicesContainer">
+            <div class="choice" onclick="choose(`fly`)">
+                <p>Fly</p>
+                <div class="img" style="background-image: url(fly.gif);"></div>
+            </div>
+            <div class="choice" onclick="choose(`mosquito`)">
+                <p>Mosquito</p>
+                <div class="img" style="background-image: url(mosquito.gif);"></div>
+            </div>
+            <div class="choice" onclick="choose(`spider`)">
+                <p>Spider</p>
+                <div class="img" style="background-image: url(spider.gif);"></div>
+            </div>
+            <div class="choice" onclick="choose(`roach`)">
+                <p>Roach</p>
+                <div class="img" style="background-image: url(roach.gif); height: 70px; bottom: 20px;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="page3" class="page three">
+        <div id="timer" class="timer">Time: 00:00</div>
+        <div class="score">Score: 0</div>
+
+    </div>
+
+    <div id="guide" class="guide hidden">
+        <p>Are you annoyed yet?</p>
+        <p>You are playing an impossible game!!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

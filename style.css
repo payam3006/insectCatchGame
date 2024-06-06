@@ -1,0 +1,139 @@
+body {
+  /*use 100vh for mobile responsive
+Ahmad!!!*/
+  height: 100dvh;
+
+  /* How TO - Disable Text Selection */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* font-size: larger; */
+  /* justify-content: center; */
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* background-color: lightgray; */
+  /* color: white; */
+}
+/* prevent Refresh on touchDown */
+body {
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+.page {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  transition: 1s;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+.one {
+  background-color: lightcoral;
+}
+.btn {
+  background-color: blueviolet;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.two {
+  top: 100dvh;
+  background-color: violet;
+}
+.choicesContainer {
+  text-align: center;
+}
+.choice {
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+.choice:hover {
+  background-color: white;
+  color: black;
+}
+p {
+  margin-top: 7px;
+  font-weight: bold;
+}
+.img {
+  width: 80%;
+  height: 80%;
+  /* background-color: aqua; */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+}
+.three {
+  top: 100dvh;
+  background-color: blueviolet;
+}
+.timer {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.in {
+  top: 0;
+}
+
+.insect {
+  position: absolute;
+  width: 80px;
+  cursor: pointer;
+  scale: 1;
+  transition: 0.5s;
+}
+.out {
+  scale: 0;
+}
+.guide {
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  transition: 1s;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.hidden {
+  top: -200px;
+}
+/* //////////////////////////////////// */
+
+/* @media only screen and (max-width: 600px) {
+  p {
+    font-size: 1.5vmax;
+  }
+  .fa {
+    font-size: 20px;
+  }
+} */
+
+/* //////////////////////////////////// */
