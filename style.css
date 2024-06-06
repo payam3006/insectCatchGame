@@ -109,6 +109,7 @@ p {
   cursor: pointer;
   scale: 1;
   transition: 0.5s;
+  z-index: 1;
 }
 .out {
   scale: 0;
@@ -121,6 +122,7 @@ p {
   transition: 1s;
   text-align: center;
   background-color: rgb(0, 0, 0, 0.5);
+  padding: 20px 0 10px 0;
 }
 .hidden {
   top: -200px;
